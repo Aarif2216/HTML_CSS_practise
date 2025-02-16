@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Card CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            background-color: white;
+            border: 1px solid rgb(33, 22, 22);
+            width: 50vw;
+            max-width: 600px; /* Optional: Set a max-width to avoid very large screens */
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Profile-Image {
+            padding: 1px;
+            margin: 5px;
+            background-color: aliceblue;
+            border: 1px solid rgb(212, 227, 240);
+            border-radius: 10px;
+            width: 95%;
+            height: 30vw; /* Use viewport width to make it dynamic */
+            max-height: 200px; /* Optional: Set a max-height to control large images */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Profile-Image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .Tag {
+            padding: 1px;
+            margin: 5px;
+            background-color: aliceblue;
+            border: solid rgb(248, 248, 248);
+            border-radius: 10px;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .Tag span {
+            padding: 1px 10px;
+            margin: 2px;
+            border-radius: 10px;
+            font-size: 14px;
+            border: 1px solid rgb(200, 200, 200);
+            background-color: white;
+        }
+
+        button {
+            border-radius: 10px;
+            color: rgb(48, 80, 168);
+            background-color: rgb(156, 166, 227);
+            padding: 5px 10px;
+            align-self: center; /* Center button horizontally */
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        h1, p {
+            overflow: hidden;
+            text-align: center; /* Center text */
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="Profile-Image">
+            <img src="https://th.bing.com/th?id=OIP.HxV79tFMPfBAIo0BBF-sOgHaEy&w=310&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Nature Image">
+        </div>
+        <div class="Tag">
+            <span>Tree</span>
+            <span>Lake</span>
+        </div>
+        <div>
+            <h1>West Lake</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos consequuntur dicta nam ab, dolorum molestiae odio? Ducimus ea atque cupiditate assumenda dicta, distinctio reprehenderit pariatur?</p>
+        </div>
+        <button type="submit">Read More</button>
+    </div>
+</body>
+</html>
